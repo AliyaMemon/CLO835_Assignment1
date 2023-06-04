@@ -129,16 +129,6 @@ resource "aws_security_group" "my_sg" {
   )
 }
 
-# Elastic IP
-resource "aws_eip" "static_eip" {
-  instance = aws_instance.my_amazon.id
-  tags = merge(local.default_tags,
-    {
-      "Name" = "${local.name_prefix}-eip"
-    }
-  )
-}
-
 #Amazon ECR Repository for Docker webapp and MySQL images
 resource "aws_ecr_repository" "aliya-webapp" {
   name = "aliya-webapp"
