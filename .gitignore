@@ -1,0 +1,28 @@
+#Terraform files
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfplan
+
+# Local override variables file
+override.tf
+
+# Ignore environment-specific variables files
+*.auto.tfvars
+
+# Ignore sensitive or secret files
+*.pem
+*.key
+*.cert
+
+# Ignore Cloud9 specific files
+/.c9/
+.c9revisions/
+.c9project
+
+# Ignore IDE settings
+.idea/
+.vscode/
+*.sublime-*
+*.swp
+
