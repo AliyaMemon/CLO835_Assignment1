@@ -79,7 +79,7 @@ resource "aws_security_group" "my_sg" {
   }
 
   ingress {
-    description      = "SSH from everywhere"
+    description      = "HTTPfrom everywhere"
     from_port        = 80
     to_port          = 80
     protocol         = "tcp"
@@ -88,7 +88,7 @@ resource "aws_security_group" "my_sg" {
   }
   
   ingress {
-    description      = "SSH from everywhere"
+    description      = "Traffic from Blue"
     from_port        = 8081
     to_port          = 8081
     protocol         = "tcp"
@@ -97,7 +97,7 @@ resource "aws_security_group" "my_sg" {
   }
   
   ingress {
-    description      = "SSH from everywhere"
+    description      = "Traffic from Pink"
     from_port        = 8082
     to_port          = 8082
     protocol         = "tcp"
@@ -106,7 +106,7 @@ resource "aws_security_group" "my_sg" {
   }
   
   ingress {
-    description      = "SSH from everywhere"
+    description      = "Traffic from Lime"
     from_port        = 8083
     to_port          = 8083
     protocol         = "tcp"
